@@ -6,3 +6,4 @@ Aquí se encuentran los laboratorios y tareas realizadas junto con los archivos 
 Hasta el momento se enceuntran completos:
 - Laboratorio 1
 - Laboratorio 2
+- Tarea 1
