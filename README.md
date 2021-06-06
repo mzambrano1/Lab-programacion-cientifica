@@ -7,4 +7,4 @@ Hasta el momento se enceuntran completos:
 - Laboratorio 1
 - Laboratorio 2
 - Tarea 1
-- - Laboratorio 3
+- Laboratorio 3
