@@ -9,3 +9,4 @@ Hasta el momento se enceuntran completos:
 - Tarea 1
 - Laboratorio 3
 - Laboratorio 4
+- Laboratorio 5
