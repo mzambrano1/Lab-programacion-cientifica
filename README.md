@@ -10,3 +10,4 @@ Hasta el momento se enceuntran completos:
 - Laboratorio 3
 - Laboratorio 4
 - Laboratorio 5
+- Tarea 2
