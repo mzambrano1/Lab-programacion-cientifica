@@ -1,14 +1,15 @@
 from typing import Dict, List, Optional
-from fastapi import FastAPI
+from fastapi import FastAPI,Response
 from joblib import load
 from tinydb import TinyDB, Query
 from datetime import datetime
 from tinydb.operations import set
+import pandas as pd
 
 app = FastAPI(title="Lab 6")
 
 # aquí carguen el modelo guardado (con load de joblib) y
-model = None
+model = load(r'C:\Users\Maria José\Documents\9 semestre\Lab programacion\Lab-programacion-cientifica\Laboratorios\Lab 6\modelo_2.joblib')
 # el cliente de base de datos (con tinydb). Usen './db.json' como bbdd.
 db = None
 
@@ -23,8 +24,9 @@ db = None
 
 @app.post("/potabilidad/")
 async def predict_and_save(observation: Dict[str, float]):
-    # implementar 1. aquí
-    pass
+    data = qry = pd.DataFrame.from_dict(orient = 'index', data = observation).T
+    prediction = model.predict(data) 
+    return  Response(content=prediction, media_type="application/json")
 
 
 @app.get("/potabilidad/")
