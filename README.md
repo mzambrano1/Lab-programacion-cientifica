@@ -11,3 +11,4 @@ Hasta el momento se encuentran completos:
 - Laboratorio 4
 - Laboratorio 5
 - Tarea 2
+- Laboratorio 6
